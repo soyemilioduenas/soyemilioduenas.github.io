@@ -3,42 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <title>Emilio Dueñas</title>
+
+
 <style>
+
 body {
-  background:#0e0e0e;
-  color:white;
-  font-family:sans-serif;
-  text-align:center;
-  padding:40px;
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0f172a,#020617);
+  color:#e2e8f0;
 }
-a {
-  padding:10px 20px;
-  border:1px solid #aaa;
+
+.container {
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+  text-align:center;
+}
+
+img {
+  width:180px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,0.2);
+  box-shadow:0 0 30px rgba(0,150,255,0.2);
+}
+
+a.btn {
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.1);
+  padding:12px 22px;
   margin:5px;
+  border-radius:8px;
   display:inline-block;
   text-decoration:none;
+  color:#e2e8f0;
+  backdrop-filter:blur(10px);
+  transition:0.3s;
+}
+
+a.btn:hover {
+  background:rgba(0,150,255,0.15);
+  border:1px solid rgba(0,150,255,0.4);
+  transform:translateY(-2px);
+}
+
+.card {
+  background:rgba(255,255,255,0.03);
+  padding:30px;
+  border-radius:12px;
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.navbar {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:15px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.navbar a {
+  color:#94a3b8;
+  text-decoration:none;
+}
+
+.navbar a:hover {
   color:white;
 }
-img {
-  width:250px;
-  border-radius:50%;
-}
-ul {
-  list-style-position: inside;
-  padding: 0;
-  display: inline-block;
-  text-align: left;
-}
-.top-icons {
-  position:absolute;
-  top:20px;
-  right:20px;
-}
-.top-icons a {
-  border:none;
-  margin:5px;
-}
+
 </style>
+
 </head>
 <body>
 
@@ -48,19 +83,44 @@ ul {
 <a href="https://tiktok.com/@soyemilioduenas">TikTok</a>
 </div>
 
+<div class="navbar">
+<a href="/">Home</a>
+<a href="/services/">Services</a>
+<a href="/templates/">Templates</a>
+<a href="/research/">Research</a>
+<a href="/cyveris/">Cyveris</a>
+</div>
+
+<div class="container">
+<div class="card">
 
 
-<h2>Tags</h2>
+
+<img src="/emilioduenas.github.io/images/profile.png" />
+
+<br><br>
+
+<h2>Emilio Dueñas</h2>
 
 <p>
-
+Telematics Engineer graduated from ESPOL, IEEE member, and MSc in Cybersecurity from Universidad Camilo José Cela.
+<br><br>
+Technical researcher focused on financial-impacting cyber risk in SMEs and digitally-dependent infrastructures.
+<br><br>
+Creator of technical content on cybersecurity, DevOps, and infrastructure resilience.
 </p>
 
 <br>
 
-<a href="/">← Back</a>
+<a class="btn" href="/services/">Technical Services</a>
+<a class="btn" href="/templates/">Templates</a>
+<a class="btn" href="/research/">Research</a>
+<a class="btn" href="/cyveris/">Cyveris</a>
 
 
+
+</div>
+</div>
 
 </body>
 </html>
